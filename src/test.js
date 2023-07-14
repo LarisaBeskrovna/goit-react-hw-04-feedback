@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Statistics from './components/Statistics/Statistics';
 import Feedback from './components/Feedback/Feedback';
 
+import './App.css';
+
 const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -32,7 +34,7 @@ const App = () => {
         onLeaveFeedback={onLeaveFeedback}
       />
 
-      <Statistics good={good} neutral={neutral} bad={bad} />
+      <Statistics good={good} bad={bad} neutral={neutral} />
     </div>
   );
 };
